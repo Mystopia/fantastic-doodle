@@ -5,7 +5,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'blooming-cliffs-50597.herokuapp.com',
+    'fantastic-doodle--production.herokuapp.com'
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
