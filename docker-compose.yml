@@ -1,0 +1,50 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:8080"
+    depends_on:
+      - web
+    volumes:
+      - ./config/nginx:/etc/nginx/conf.d
+  web:
+    build: .
+    env_file: .env
+    command: gunicorn service.wsgi --log-file - --reload
+    volumes:
+      - .:/src
+    expose:
+      - "8000"
+    depends_on:
+      - db
+      - redis
+  worker:
+    build: .
+    env_file: .env
+    command: celery -A service worker --loglevel=info --beat
+    volumes:
+      - .:/src
+    depends_on:
+      - db
+      - redis
+  flower:
+    build: .
+    command: flower -A service --broker=redis://redis
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+  redis:
+    image: redis
+    volumes:
+      - redis-data:/data
+volumes:
+  db-data:
+  redis-data:

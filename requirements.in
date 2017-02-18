@@ -1,0 +1,12 @@
+celery
+dj-database-url
+django
+django-debug-toolbar
+django-extensions
+flower
+gunicorn
+pip-tools
+psycopg2
+redis
+sqlalchemy
+whitenoise
