@@ -2,6 +2,8 @@
 
 ## Getting Started
 
+Once everything is up, head over to [localhost:8080](http://localhost:8080/admin/).
+
 ```shell
 cp sample.env .env
 docker-compose up
