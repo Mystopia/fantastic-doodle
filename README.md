@@ -13,5 +13,7 @@ Example usage:
 
 ```
 docker-compose run web python manage.py migrate
+docker-compose run web python manage.py createsuperuser
 docker-compose run web python manage.py test --settings service.settings.test
+docker-compose run --rm web python manage.py shell_plus
 ```
