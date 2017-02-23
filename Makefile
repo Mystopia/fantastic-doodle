@@ -9,3 +9,9 @@ docker_migrate:
 
 docker_test:
 	docker-compose run web python manage.py test --settings service.settings.test
+
+docker_cleanup_aggressive:
+	docker ps -aq
+	docker ps -aq | xargs docker rm -f
+	docker images -aq
+	docker images -aq | xargs docker rmi -f
