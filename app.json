@@ -31,7 +31,14 @@
     "test": {
       "scripts": {
         "test": "python -Wd manage.py test --settings service.settings.test"
-      }
+      },
+      "env": {
+        "DJANGO_SETTINGS_MODULE": "service.settings.test"
+      },
+      "addons":[
+        "heroku-postgresql",
+        "heroku-redis"
+      ]
     }
   }
 }
