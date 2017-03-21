@@ -33,7 +33,8 @@
         "test": "python -Wd manage.py test --settings service.settings.test"
       },
       "env": {
-        "DJANGO_SETTINGS_MODULE": "service.settings.test"
+        "DJANGO_SETTINGS_MODULE": "service.settings.test",
+        "SECRET_KEY": "secretkey"
       },
       "addons":[
         "heroku-postgresql",
