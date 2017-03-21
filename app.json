@@ -4,9 +4,6 @@
   },
   "env": {
     "DJANGO_SETTINGS_MODULE": {
-    },
-    "REDIS_URL": {
-      "required": true
       "description": "Tell Django which settings you’re using (e.g. 'service.settings.production').",
       "value": "service.settings.base"
     },
