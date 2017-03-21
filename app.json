@@ -5,7 +5,7 @@
   "env": {
     "DJANGO_SETTINGS_MODULE": {
       "description": "Tell Django which settings you’re using (e.g. 'service.settings.production').",
-      "value": "service.settings.base"
+      "value": "service.settings.production"
     },
     "SECRET_KEY": {
       "description": "This gets generated",
