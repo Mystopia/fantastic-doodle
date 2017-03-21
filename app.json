@@ -10,7 +10,8 @@
       "required": true
     },
     "SECRET_KEY": {
-      "required": true
+      "description": "This gets generated",
+      "generator": "secret"
     }
   },
   "formation": {
