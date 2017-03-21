@@ -34,6 +34,7 @@
         "test": "python -Wd manage.py test --settings service.settings.test"
       },
       "env": {
+        "DATABASE_URL": "sqlite://",
         "DJANGO_SETTINGS_MODULE": "service.settings.test",
         "SECRET_KEY": "secretkey"
       },
