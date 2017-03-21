@@ -30,6 +30,7 @@
   "environments": {
     "test": {
       "scripts": {
+        "test-setup": "python manage.py diffsettings",
         "test": "python -Wd manage.py test --settings service.settings.test"
       },
       "env": {
