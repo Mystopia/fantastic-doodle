@@ -3,6 +3,10 @@
   "scripts": {
   },
   "env": {
+    "ALLOWED_HOSTS": {
+      "description": "https://docs.djangoproject.com/en/1.10/ref/settings/#allowed-hosts",
+      "value": "*.herokuapp.com"
+    },
     "DJANGO_SETTINGS_MODULE": {
       "description": "Tell Django which settings you’re using (e.g. 'service.settings.production').",
       "value": "service.settings.production"
