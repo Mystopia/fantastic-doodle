@@ -8,7 +8,7 @@ docker_migrate:
 	docker-compose run web python manage.py migrate
 
 docker_test:
-	docker-compose run web python manage.py test --settings service.settings.test
+	docker-compose run web python -Wd manage.py test --settings service.settings.test
 
 docker_cleanup_aggressive:
 	docker ps -aq
