@@ -26,5 +26,12 @@
     {
       "url": "heroku/python"
     }
-  ]
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "python -Wd manage.py test --settings service.settings.test"
+      }
+    }
+  }
 }
