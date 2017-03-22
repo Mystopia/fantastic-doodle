@@ -10,7 +10,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# SSL/HTTPS Security
+# Security: SSL/HTTPS
+# https://docs.djangoproject.com/en/dev/topics/security/#ssl-https
 
 ## Set SECURE_SSL_REDIRECT to True, so that requests over HTTP are redirected to HTTPS.
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

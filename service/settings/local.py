@@ -4,7 +4,8 @@ from service.settings.production import *
 
 DEBUG = { 0: False, 1: True }[int(os.getenv('DEBUG'))]
 
-# SSL/HTTPS Security
+# Security: SSL/HTTPS
+# https://docs.djangoproject.com/en/dev/topics/security/#ssl-https
 
 ## Set SECURE_SSL_REDIRECT to True, so that requests over HTTP are redirected to HTTPS.
 SECURE_PROXY_SSL_HEADER = None
