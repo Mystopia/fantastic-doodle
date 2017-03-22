@@ -4,9 +4,6 @@ from service.settings.production import *
 
 DEBUG = { 0: False, 1: True }[int(os.getenv('DEBUG'))]
 
-ALLOWED_HOSTS = [
-    'localhost',
-]
 
 if DEBUG:
     MIDDLEWARE += [
