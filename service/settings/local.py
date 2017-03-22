@@ -4,6 +4,19 @@ from service.settings.production import *
 
 DEBUG = { 0: False, 1: True }[int(os.getenv('DEBUG'))]
 
+# SSL/HTTPS Security
+
+## Set SECURE_SSL_REDIRECT to True, so that requests over HTTP are redirected to HTTPS.
+SECURE_PROXY_SSL_HEADER = None
+SECURE_SSL_REDIRECT = False
+
+## Use ‘secure’ cookies.
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+
+## Use HTTP Strict Transport Security (HSTS)
+SECURE_HSTS_SECONDS = 0
+SECURE_HSTS_INCLUDE_SUBDOMAINS = False
 
 if DEBUG:
     MIDDLEWARE += [
