@@ -4,6 +4,10 @@ virtualenv:
 docker_pip_compile:
 	docker-compose run web pip-compile --output-file requirements.txt requirements.in
 
+docker_pip_upgrade:
+	echo "" > requirements.txt
+	docker-compose run web pip-compile --output-file requirements.txt requirements.in
+
 docker_migrate:
 	docker-compose run web python manage.py migrate
 
