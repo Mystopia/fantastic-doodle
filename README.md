@@ -1,5 +1,7 @@
 # fantastic-doodle
 
+[![Build Status](https://travis-ci.org/Mystopia/fantastic-doodle.svg?branch=master)](https://travis-ci.org/Mystopia/fantastic-doodle)
+
 ## Getting Started
 
 ### Deploy to Heroku
