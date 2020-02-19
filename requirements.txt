@@ -14,7 +14,7 @@ django-debug-toolbar==1.7
 django-extensions==1.7.7
 django==1.11rc1
 first==2.0.1              # via pip-tools
-flower==0.9.1
+flower==0.9.2
 gunicorn==19.7.1
 kombu==4.0.2              # via celery
 pip-tools==1.8.0
