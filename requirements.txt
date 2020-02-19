@@ -12,7 +12,7 @@ click==6.7                # via pip-tools
 dj-database-url==0.4.2
 django-debug-toolbar==1.7
 django-extensions==1.7.7
-django==1.11rc1
+django==1.11.28
 first==2.0.1              # via pip-tools
 flower==0.9.1
 gunicorn==19.7.1
